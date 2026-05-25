@@ -1,0 +1,1017 @@
+[
+  {
+    "screenId": "d41f9c932b074be9ba6565e3659bb222",
+    "screenTitle": "Queue and Status Management - WarehouseOps Console",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Item Operations",
+        "href": "#",
+        "line": 128
+      },
+      {
+        "type": "link",
+        "label": "Queue &amp; Status",
+        "href": "#",
+        "line": 133
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 137
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 141
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 166
+      },
+      {
+        "type": "button",
+        "label": "help",
+        "line": 170
+      },
+      {
+        "type": "button",
+        "label": "JD",
+        "line": 174
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 190
+      },
+      {
+        "type": "button",
+        "label": "sort",
+        "line": 193
+      },
+      {
+        "type": "button",
+        "label": "New Work Order",
+        "line": 198
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 226
+      },
+      {
+        "type": "button",
+        "label": "Update",
+        "line": 293
+      },
+      {
+        "type": "input",
+        "label": "Search Work Orders, IDs, Items...",
+        "inputType": "text",
+        "placeholder": "Search Work Orders, IDs, Items...",
+        "line": 154
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Item Operations",
+        "href": "#",
+        "line": 128
+      },
+      {
+        "type": "link",
+        "label": "Queue &amp; Status",
+        "href": "#",
+        "line": 133
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 137
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 141
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 166
+      },
+      {
+        "type": "button",
+        "label": "help",
+        "line": 170
+      },
+      {
+        "type": "button",
+        "label": "JD",
+        "line": 174
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 190
+      },
+      {
+        "type": "button",
+        "label": "sort",
+        "line": 193
+      },
+      {
+        "type": "button",
+        "label": "New Work Order",
+        "line": 198
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 226
+      },
+      {
+        "type": "button",
+        "label": "Update",
+        "line": 293
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search Work Orders, IDs, Items...",
+        "inputType": "text",
+        "placeholder": "Search Work Orders, IDs, Items...",
+        "line": 154
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 13,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "78461ea238fc4763ba0cc646575b0181",
+    "screenTitle": "Item Operations - WarehouseOps Console",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Item Operations",
+        "href": "#",
+        "line": 135
+      },
+      {
+        "type": "link",
+        "label": "Queue &amp; Status",
+        "href": "#",
+        "line": 142
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 148
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 154
+      },
+      {
+        "type": "button",
+        "label": "Notifications",
+        "line": 183
+      },
+      {
+        "type": "button",
+        "label": "Help",
+        "line": 186
+      },
+      {
+        "type": "button",
+        "label": "Logout",
+        "line": 189
+      },
+      {
+        "type": "button",
+        "label": "Create New Item",
+        "line": 247
+      },
+      {
+        "type": "button",
+        "label": "Retry Load",
+        "line": 323
+      },
+      {
+        "type": "button",
+        "label": "close",
+        "line": 346
+      },
+      {
+        "type": "button",
+        "label": "Dispatch Technician",
+        "line": 380
+      },
+      {
+        "type": "button",
+        "label": "View Full History",
+        "line": 383
+      },
+      {
+        "type": "input",
+        "label": "Global search...",
+        "inputType": "text",
+        "placeholder": "Global search...",
+        "line": 179
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 229
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 235
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 241
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Item Operations",
+        "href": "#",
+        "line": 135
+      },
+      {
+        "type": "link",
+        "label": "Queue &amp; Status",
+        "href": "#",
+        "line": 142
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 148
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 154
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Notifications",
+        "line": 183
+      },
+      {
+        "type": "button",
+        "label": "Help",
+        "line": 186
+      },
+      {
+        "type": "button",
+        "label": "Logout",
+        "line": 189
+      },
+      {
+        "type": "button",
+        "label": "Create New Item",
+        "line": 247
+      },
+      {
+        "type": "button",
+        "label": "Retry Load",
+        "line": 323
+      },
+      {
+        "type": "button",
+        "label": "close",
+        "line": 346
+      },
+      {
+        "type": "button",
+        "label": "Dispatch Technician",
+        "line": 380
+      },
+      {
+        "type": "button",
+        "label": "View Full History",
+        "line": 383
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Global search...",
+        "inputType": "text",
+        "placeholder": "Global search...",
+        "line": 179
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 229
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 235
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 241
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 16,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "d3161b05a05e41229198407982ca9d73",
+    "screenTitle": "Item Editor - WarehouseOps Console",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Item Operations",
+        "href": "#",
+        "line": 127
+      },
+      {
+        "type": "link",
+        "label": "Queue &amp; Status",
+        "href": "#",
+        "line": 132
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 136
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 140
+      },
+      {
+        "type": "link",
+        "label": "Back to List",
+        "href": "#",
+        "line": 190
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 171
+      },
+      {
+        "type": "button",
+        "label": "help",
+        "line": 174
+      },
+      {
+        "type": "button",
+        "label": "logout",
+        "line": 178
+      },
+      {
+        "type": "button",
+        "label": "Cancel",
+        "line": 286
+      },
+      {
+        "type": "button",
+        "label": "Changes",
+        "line": 290
+      },
+      {
+        "type": "input",
+        "label": "Search system...",
+        "inputType": "text",
+        "placeholder": "Search system...",
+        "line": 163
+      },
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 212
+      },
+      {
+        "type": "input",
+        "label": "e.g. Primary Loading Forklift",
+        "inputType": "text",
+        "placeholder": "e.g. Primary Loading Forklift",
+        "line": 220
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 237
+      },
+      {
+        "type": "input",
+        "label": "Search technician...",
+        "inputType": "text",
+        "placeholder": "Search technician...",
+        "line": 251
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 262
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 266
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 270
+      },
+      {
+        "type": "input",
+        "label": "Detail the maintenance requirements...",
+        "inputType": "textarea",
+        "placeholder": "Detail the maintenance requirements...",
+        "line": 278
+      },
+      {
+        "type": "form",
+        "label": "form",
+        "line": 204
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Item Operations",
+        "href": "#",
+        "line": 127
+      },
+      {
+        "type": "link",
+        "label": "Queue &amp; Status",
+        "href": "#",
+        "line": 132
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 136
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 140
+      },
+      {
+        "type": "link",
+        "label": "Back to List",
+        "href": "#",
+        "line": 190
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 171
+      },
+      {
+        "type": "button",
+        "label": "help",
+        "line": 174
+      },
+      {
+        "type": "button",
+        "label": "logout",
+        "line": 178
+      },
+      {
+        "type": "button",
+        "label": "Cancel",
+        "line": 286
+      },
+      {
+        "type": "button",
+        "label": "Changes",
+        "line": 290
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search system...",
+        "inputType": "text",
+        "placeholder": "Search system...",
+        "line": 163
+      },
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 212
+      },
+      {
+        "type": "input",
+        "label": "e.g. Primary Loading Forklift",
+        "inputType": "text",
+        "placeholder": "e.g. Primary Loading Forklift",
+        "line": 220
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 237
+      },
+      {
+        "type": "input",
+        "label": "Search technician...",
+        "inputType": "text",
+        "placeholder": "Search technician...",
+        "line": 251
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 262
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 266
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 270
+      },
+      {
+        "type": "input",
+        "label": "Detail the maintenance requirements...",
+        "inputType": "textarea",
+        "placeholder": "Detail the maintenance requirements...",
+        "line": 278
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 20,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "511c53f4103d4075b5d9cb7eacbba669",
+    "screenTitle": "Settings and Preferences - WarehouseOps Console",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Item Operations",
+        "href": "#",
+        "line": 174
+      },
+      {
+        "type": "link",
+        "label": "Queue &amp; Status",
+        "href": "#",
+        "line": 179
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 184
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 189
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 223
+      },
+      {
+        "type": "button",
+        "label": "help",
+        "line": 226
+      },
+      {
+        "type": "button",
+        "label": "Logout",
+        "line": 230
+      },
+      {
+        "type": "button",
+        "label": "Enable high density mode",
+        "line": 259
+      },
+      {
+        "type": "button",
+        "label": "Edit",
+        "line": 305
+      },
+      {
+        "type": "button",
+        "label": "Delete",
+        "line": 308
+      },
+      {
+        "type": "button",
+        "label": "Edit",
+        "line": 317
+      },
+      {
+        "type": "button",
+        "label": "Delete",
+        "line": 320
+      },
+      {
+        "type": "button",
+        "label": "Edit",
+        "line": 329
+      },
+      {
+        "type": "button",
+        "label": "Delete",
+        "line": 332
+      },
+      {
+        "type": "button",
+        "label": "Reset to Defaults",
+        "line": 384
+      },
+      {
+        "type": "button",
+        "label": "Preferences",
+        "line": 387
+      },
+      {
+        "type": "input",
+        "label": "Search parameters...",
+        "inputType": "text",
+        "placeholder": "Search parameters...",
+        "line": 214
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 269
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 353
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 363
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 373
+      },
+      {
+        "type": "form",
+        "label": "form",
+        "line": 243
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Item Operations",
+        "href": "#",
+        "line": 174
+      },
+      {
+        "type": "link",
+        "label": "Queue &amp; Status",
+        "href": "#",
+        "line": 179
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 184
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 189
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 223
+      },
+      {
+        "type": "button",
+        "label": "help",
+        "line": 226
+      },
+      {
+        "type": "button",
+        "label": "Logout",
+        "line": 230
+      },
+      {
+        "type": "button",
+        "label": "Enable high density mode",
+        "line": 259
+      },
+      {
+        "type": "button",
+        "label": "Edit",
+        "line": 305
+      },
+      {
+        "type": "button",
+        "label": "Delete",
+        "line": 308
+      },
+      {
+        "type": "button",
+        "label": "Edit",
+        "line": 317
+      },
+      {
+        "type": "button",
+        "label": "Delete",
+        "line": 320
+      },
+      {
+        "type": "button",
+        "label": "Edit",
+        "line": 329
+      },
+      {
+        "type": "button",
+        "label": "Delete",
+        "line": 332
+      },
+      {
+        "type": "button",
+        "label": "Reset to Defaults",
+        "line": 384
+      },
+      {
+        "type": "button",
+        "label": "Preferences",
+        "line": 387
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search parameters...",
+        "inputType": "text",
+        "placeholder": "Search parameters...",
+        "line": 214
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 269
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 353
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 363
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 373
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 22,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "6ec1315d87df440aac8e1ccecb2bc250",
+    "screenTitle": "Insights - WarehouseOps Console",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Item Operations",
+        "href": "#",
+        "line": 140
+      },
+      {
+        "type": "link",
+        "label": "Queue &amp; Status",
+        "href": "#",
+        "line": 145
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 150
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 155
+      },
+      {
+        "type": "link",
+        "label": "#WO-410",
+        "href": "#",
+        "line": 322
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 186
+      },
+      {
+        "type": "button",
+        "label": "help",
+        "line": 189
+      },
+      {
+        "type": "button",
+        "label": "logout",
+        "line": 193
+      },
+      {
+        "type": "button",
+        "label": "Filter Insights",
+        "line": 208
+      },
+      {
+        "type": "button",
+        "label": "Export Report",
+        "line": 213
+      },
+      {
+        "type": "button",
+        "label": "Review Queue",
+        "line": 303
+      },
+      {
+        "type": "button",
+        "label": "View All Logs",
+        "line": 312
+      },
+      {
+        "type": "input",
+        "label": "Search operations, assets, or IDs...",
+        "inputType": "text",
+        "placeholder": "Search operations, assets, or IDs...",
+        "line": 178
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Item Operations",
+        "href": "#",
+        "line": 140
+      },
+      {
+        "type": "link",
+        "label": "Queue &amp; Status",
+        "href": "#",
+        "line": 145
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 150
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 155
+      },
+      {
+        "type": "link",
+        "label": "#WO-410",
+        "href": "#",
+        "line": 322
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 186
+      },
+      {
+        "type": "button",
+        "label": "help",
+        "line": 189
+      },
+      {
+        "type": "button",
+        "label": "logout",
+        "line": 193
+      },
+      {
+        "type": "button",
+        "label": "Filter Insights",
+        "line": 208
+      },
+      {
+        "type": "button",
+        "label": "Export Report",
+        "line": 213
+      },
+      {
+        "type": "button",
+        "label": "Review Queue",
+        "line": 303
+      },
+      {
+        "type": "button",
+        "label": "View All Logs",
+        "line": 312
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search operations, assets, or IDs...",
+        "inputType": "text",
+        "placeholder": "Search operations, assets, or IDs...",
+        "line": 178
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 13,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]

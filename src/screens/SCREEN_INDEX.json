@@ -1,0 +1,451 @@
+[
+  {
+    "screenId": "d41f9c932b074be9ba6565e3659bb222",
+    "title": "Queue and Status Management - WarehouseOps Console",
+    "componentName": "QueueAndStatusManagementWarehouseopsConsole",
+    "file": "src/screens/QueueAndStatusManagementWarehouseopsConsole.tsx",
+    "buttons": 8,
+    "inputs": 1,
+    "links": 4,
+    "actions": [
+      {
+        "id": "notifications-1",
+        "kind": "button",
+        "label": "Notifications",
+        "index": 0
+      },
+      {
+        "id": "help-2",
+        "kind": "button",
+        "label": "Help",
+        "index": 1
+      },
+      {
+        "id": "jd-3",
+        "kind": "button",
+        "label": "JD",
+        "index": 2
+      },
+      {
+        "id": "filter-4",
+        "kind": "button",
+        "label": "Filter",
+        "index": 3
+      },
+      {
+        "id": "sort-5",
+        "kind": "button",
+        "label": "Sort",
+        "index": 4
+      },
+      {
+        "id": "new-work-order-6",
+        "kind": "button",
+        "label": "New Work Order",
+        "index": 5
+      },
+      {
+        "id": "more-horiz-7",
+        "kind": "button",
+        "label": "More Horiz",
+        "index": 6
+      },
+      {
+        "id": "update-8",
+        "kind": "button",
+        "label": "Update",
+        "index": 7
+      },
+      {
+        "id": "item-operations-1",
+        "kind": "link",
+        "label": "Item Operations",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "queue-and-status-2",
+        "kind": "link",
+        "label": "Queue and Status",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "insights-3",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "settings-4",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 3
+      }
+    ]
+  },
+  {
+    "screenId": "78461ea238fc4763ba0cc646575b0181",
+    "title": "Item Operations - WarehouseOps Console",
+    "componentName": "ItemOperationsWarehouseopsConsole",
+    "file": "src/screens/ItemOperationsWarehouseopsConsole.tsx",
+    "buttons": 8,
+    "inputs": 1,
+    "links": 4,
+    "actions": [
+      {
+        "id": "notifications-1",
+        "kind": "button",
+        "label": "Notifications",
+        "index": 0
+      },
+      {
+        "id": "help-2",
+        "kind": "button",
+        "label": "Help",
+        "index": 1
+      },
+      {
+        "id": "logout-3",
+        "kind": "button",
+        "label": "Logout",
+        "index": 2
+      },
+      {
+        "id": "create-new-item-4",
+        "kind": "button",
+        "label": "Create New Item",
+        "index": 3
+      },
+      {
+        "id": "retry-load-5",
+        "kind": "button",
+        "label": "Retry Load",
+        "index": 4
+      },
+      {
+        "id": "close-6",
+        "kind": "button",
+        "label": "Close",
+        "index": 5
+      },
+      {
+        "id": "dispatch-technician-7",
+        "kind": "button",
+        "label": "Dispatch Technician",
+        "index": 6
+      },
+      {
+        "id": "view-full-history-8",
+        "kind": "button",
+        "label": "View Full History",
+        "index": 7
+      },
+      {
+        "id": "item-operations-1",
+        "kind": "link",
+        "label": "Item Operations",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "queue-and-status-2",
+        "kind": "link",
+        "label": "Queue and Status",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "insights-3",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "settings-4",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 3
+      }
+    ]
+  },
+  {
+    "screenId": "d3161b05a05e41229198407982ca9d73",
+    "title": "Item Editor - WarehouseOps Console",
+    "componentName": "ItemEditorWarehouseopsConsole",
+    "file": "src/screens/ItemEditorWarehouseopsConsole.tsx",
+    "buttons": 5,
+    "inputs": 7,
+    "links": 5,
+    "actions": [
+      {
+        "id": "notifications-1",
+        "kind": "button",
+        "label": "Notifications",
+        "index": 0
+      },
+      {
+        "id": "help-2",
+        "kind": "button",
+        "label": "Help",
+        "index": 1
+      },
+      {
+        "id": "logout-3",
+        "kind": "button",
+        "label": "Logout",
+        "index": 2
+      },
+      {
+        "id": "cancel-4",
+        "kind": "button",
+        "label": "Cancel",
+        "index": 3
+      },
+      {
+        "id": "save-changes-5",
+        "kind": "button",
+        "label": "Save Changes",
+        "index": 4
+      },
+      {
+        "id": "item-operations-1",
+        "kind": "link",
+        "label": "Item Operations",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "queue-and-status-2",
+        "kind": "link",
+        "label": "Queue and Status",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "insights-3",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "settings-4",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "back-to-list-5",
+        "kind": "link",
+        "label": "Back to List",
+        "href": "#",
+        "index": 4
+      }
+    ]
+  },
+  {
+    "screenId": "511c53f4103d4075b5d9cb7eacbba669",
+    "title": "Settings and Preferences - WarehouseOps Console",
+    "componentName": "SettingsAndPreferencesWarehouseopsConsole",
+    "file": "src/screens/SettingsAndPreferencesWarehouseopsConsole.tsx",
+    "buttons": 12,
+    "inputs": 4,
+    "links": 4,
+    "actions": [
+      {
+        "id": "notifications-1",
+        "kind": "button",
+        "label": "Notifications",
+        "index": 0
+      },
+      {
+        "id": "help-2",
+        "kind": "button",
+        "label": "Help",
+        "index": 1
+      },
+      {
+        "id": "logout-3",
+        "kind": "button",
+        "label": "Logout",
+        "index": 2
+      },
+      {
+        "id": "enable-high-density-mode-4",
+        "kind": "button",
+        "label": "Enable high density mode",
+        "index": 3
+      },
+      {
+        "id": "edit-5",
+        "kind": "button",
+        "label": "Edit",
+        "index": 4
+      },
+      {
+        "id": "delete-6",
+        "kind": "button",
+        "label": "Delete",
+        "index": 5
+      },
+      {
+        "id": "edit-7",
+        "kind": "button",
+        "label": "Edit",
+        "index": 6
+      },
+      {
+        "id": "delete-8",
+        "kind": "button",
+        "label": "Delete",
+        "index": 7
+      },
+      {
+        "id": "edit-9",
+        "kind": "button",
+        "label": "Edit",
+        "index": 8
+      },
+      {
+        "id": "delete-10",
+        "kind": "button",
+        "label": "Delete",
+        "index": 9
+      },
+      {
+        "id": "reset-to-defaults-11",
+        "kind": "button",
+        "label": "Reset to Defaults",
+        "index": 10
+      },
+      {
+        "id": "save-preferences-12",
+        "kind": "button",
+        "label": "Save Preferences",
+        "index": 11
+      },
+      {
+        "id": "item-operations-1",
+        "kind": "link",
+        "label": "Item Operations",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "queue-and-status-2",
+        "kind": "link",
+        "label": "Queue and Status",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "insights-3",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "settings-4",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 3
+      }
+    ]
+  },
+  {
+    "screenId": "6ec1315d87df440aac8e1ccecb2bc250",
+    "title": "Insights - WarehouseOps Console",
+    "componentName": "InsightsWarehouseopsConsole",
+    "file": "src/screens/InsightsWarehouseopsConsole.tsx",
+    "buttons": 7,
+    "inputs": 1,
+    "links": 5,
+    "actions": [
+      {
+        "id": "notifications-1",
+        "kind": "button",
+        "label": "Notifications",
+        "index": 0
+      },
+      {
+        "id": "help-2",
+        "kind": "button",
+        "label": "Help",
+        "index": 1
+      },
+      {
+        "id": "logout-3",
+        "kind": "button",
+        "label": "Logout",
+        "index": 2
+      },
+      {
+        "id": "filter-insights-4",
+        "kind": "button",
+        "label": "Filter Insights",
+        "index": 3
+      },
+      {
+        "id": "export-report-5",
+        "kind": "button",
+        "label": "Export Report",
+        "index": 4
+      },
+      {
+        "id": "review-queue-6",
+        "kind": "button",
+        "label": "Review Queue",
+        "index": 5
+      },
+      {
+        "id": "view-all-logs-7",
+        "kind": "button",
+        "label": "View All Logs",
+        "index": 6
+      },
+      {
+        "id": "item-operations-1",
+        "kind": "link",
+        "label": "Item Operations",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "queue-and-status-2",
+        "kind": "link",
+        "label": "Queue and Status",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "insights-3",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "settings-4",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "wo-410-5",
+        "kind": "link",
+        "label": "#WO-410",
+        "href": "#",
+        "index": 4
+      }
+    ]
+  }
+]
