@@ -1,0 +1,47 @@
+[
+  {
+    "screenId": "d41f9c932b074be9ba6565e3659bb222",
+    "name": "Queue and Status Management - WarehouseOps Console",
+    "type": "app-screen",
+    "description": "Queue and Status Management - WarehouseOps Console screen",
+    "surfaceIds": [
+      "SURF_QUEUE_AND_STATUS_MANAGEMENT"
+    ]
+  },
+  {
+    "screenId": "78461ea238fc4763ba0cc646575b0181",
+    "name": "Item Operations - WarehouseOps Console",
+    "type": "app-screen",
+    "description": "Item Operations - WarehouseOps Console screen",
+    "surfaceIds": [
+      "SURF_ITEM_OPERATIONS"
+    ]
+  },
+  {
+    "screenId": "d3161b05a05e41229198407982ca9d73",
+    "name": "Item Editor - WarehouseOps Console",
+    "type": "form",
+    "description": "Item Editor - WarehouseOps Console screen",
+    "surfaceIds": [
+      "SURF_ITEM_EDITOR"
+    ]
+  },
+  {
+    "screenId": "511c53f4103d4075b5d9cb7eacbba669",
+    "name": "Settings and Preferences - WarehouseOps Console",
+    "type": "settings",
+    "description": "Settings and Preferences - WarehouseOps Console screen",
+    "surfaceIds": [
+      "SURF_SETTINGS_AND_PREFERENCES"
+    ]
+  },
+  {
+    "screenId": "6ec1315d87df440aac8e1ccecb2bc250",
+    "name": "Insights - WarehouseOps Console",
+    "type": "app-screen",
+    "description": "Insights - WarehouseOps Console screen",
+    "surfaceIds": [
+      "SURF_INSIGHTS"
+    ]
+  }
+]

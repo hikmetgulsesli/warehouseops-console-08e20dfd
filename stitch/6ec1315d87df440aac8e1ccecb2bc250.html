@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Insights - WarehouseOps Console</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom scrollbar for dense data tables */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0b1326; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #434655; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #8d90a0; 
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#0b1326",
+                        "on-tertiary-fixed": "#002113",
+                        "on-secondary": "#3c2f00",
+                        "surface-bright": "#31394d",
+                        "on-primary-container": "#eeefff",
+                        "inverse-primary": "#0053db",
+                        "tertiary": "#4edea3",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "secondary": "#ffe083",
+                        "surface-container-low": "#131b2e",
+                        "secondary-fixed": "#ffe083",
+                        "surface-container": "#171f33",
+                        "on-primary": "#002a78",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "surface-container-lowest": "#060e20",
+                        "on-surface-variant": "#c3c6d7",
+                        "on-tertiary": "#003824",
+                        "outline-variant": "#434655",
+                        "primary-fixed": "#dbe1ff",
+                        "inverse-on-surface": "#283044",
+                        "error": "#ffb4ab",
+                        "on-secondary-fixed": "#231b00",
+                        "on-secondary-container": "#645000",
+                        "on-primary-fixed": "#00174b",
+                        "primary": "#b4c5ff",
+                        "surface-tint": "#b4c5ff",
+                        "secondary-fixed-dim": "#eec200",
+                        "surface-variant": "#2d3449",
+                        "tertiary-fixed": "#6ffbbe",
+                        "background": "#0b1326",
+                        "surface-container-high": "#222a3d",
+                        "on-tertiary-container": "#bdffdb",
+                        "error-container": "#93000a",
+                        "on-error": "#690005",
+                        "surface-container-highest": "#2d3449",
+                        "on-error-container": "#ffdad6",
+                        "on-surface": "#dae2fd",
+                        "outline": "#8d90a0",
+                        "on-background": "#dae2fd",
+                        "primary-container": "#2563eb",
+                        "surface": "#0b1326",
+                        "inverse-surface": "#dae2fd",
+                        "on-primary-fixed-variant": "#003ea8",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "secondary-container": "#eec200",
+                        "tertiary-container": "#007d55",
+                        "on-secondary-fixed-variant": "#574500"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter-default": "1rem",
+                        "unit": "4px",
+                        "gutter-dense": "0.5rem",
+                        "sidebar-width": "240px",
+                        "row-height-sm": "32px",
+                        "container-padding": "1.5rem",
+                        "row-height-md": "40px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "display-sm": ["Inter"],
+                        "label-md": ["JetBrains Mono"],
+                        "label-sm": ["JetBrains Mono"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+                        "display-sm": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                        "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased overflow-hidden selection:bg-primary-container selection:text-on-primary-container">
+<div class="flex h-screen w-full">
+<!-- Shared Component: SideNavBar -->
+<aside class="w-sidebar-width h-screen sticky top-0 left-0 bg-surface-container-lowest border-r border-outline-variant flex flex-col py-gutter-default z-20 shrink-0 hidden md:flex">
+<!-- Header Brand -->
+<div class="px-4 mb-8 flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-gradient-to-br from-primary to-inverse-primary flex items-center justify-center shrink-0 border border-outline-variant">
+<span class="material-symbols-outlined text-on-primary font-headline-sm" style="font-variation-settings: 'FILL' 1;">widgets</span>
+</div>
+<div>
+<h1 class="font-headline-sm text-headline-sm font-bold text-primary tracking-tight">WarehouseOps</h1>
+<p class="font-label-md text-label-md text-on-surface-variant">Console v1.0</p>
+</div>
+</div>
+<!-- Navigation Items -->
+<nav class="flex-1 flex flex-col gap-1 font-body-md text-body-md">
+<!-- Item Operations (Inactive) -->
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-low transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">inventory_2</span>
+                    Item Operations
+                </a>
+<!-- Queue & Status (Inactive) -->
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-low transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">pending_actions</span>
+                    Queue &amp; Status
+                </a>
+<!-- Insights (ACTIVE) -->
+<a class="flex items-center gap-3 px-4 py-3 text-primary border-l-4 border-primary bg-surface-container-high" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">monitoring</span>
+<span class="font-bold">Insights</span>
+</a>
+<!-- Settings (Inactive) -->
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-low transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">settings</span>
+                    Settings
+                </a>
+</nav>
+<!-- Bottom Profile Avatar -->
+<div class="px-4 mt-auto">
+<div class="flex items-center gap-3 p-2 rounded hover:bg-surface-container-low cursor-pointer border border-transparent hover:border-outline-variant transition-colors">
+<img alt="User profile" class="w-8 h-8 rounded-full border border-outline-variant object-cover" data-alt="A close up portrait of a male professional with short dark hair, wearing a dark industrial uniform. The lighting is moody and cool-toned, fitting a modern corporate warehouse environment. Deep shadows contrast with subtle blue highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAl2Bvht6aKQgjL0oxAVBU4SsOBlXS7m4Hj6_TeWpZd9UPjMtcXo-FSiZfSgRP8sGWdK9zmSM20KVZcGWG0pCjw9CgAKc9t_v1m8eJby6hpEpKFWzg_w_JTcqDxfVhSBph9RCbpVJYHK6HU5-7-Aa__BVRCHNAX5OkZW_XUUn13i6CnOof16VkjBZV5g2bCRCA4YQjpB4UL52DAktB_6ebkfBHUg8-BGJxL-iZ6a4HSXKYXj_kJ1AiFwkmmhQ8V_EuK1gNOE-aZOyzk"/>
+<div class="flex-1 min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">E. Miller</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Shift Lead</p>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="flex-1 flex flex-col min-w-0 h-screen overflow-hidden">
+<!-- Shared Component: TopNavBar -->
+<header class="h-row-height-md w-full sticky top-0 z-10 bg-surface-container border-b border-outline-variant flex justify-between items-center px-container-padding gap-gutter-default shrink-0">
+<!-- Search Bar (on_left) -->
+<div class="flex-1 max-w-md flex items-center relative">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full bg-surface-dim border border-outline-variant rounded py-1.5 pl-9 pr-3 font-label-md text-label-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary placeholder-outline transition-colors" placeholder="Search operations, assets, or IDs..." type="text"/>
+</div>
+<!-- Product Name (Center-ish / Right aligned on desktop) -->
+<div class="hidden lg:block font-headline-sm text-headline-sm font-bold text-on-surface mr-auto ml-8">
+                    WarehouseOps Console
+                </div>
+<!-- Trailing Icon Actions -->
+<div class="flex items-center gap-2">
+<button class="w-8 h-8 flex items-center justify-center rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all hover:scale-95">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all hover:scale-95">
+<span class="material-symbols-outlined text-[20px]">help</span>
+</button>
+<div class="w-px h-5 bg-outline-variant mx-1"></div>
+<button class="w-8 h-8 flex items-center justify-center rounded text-error hover:bg-error/10 transition-all hover:scale-95">
+<span class="material-symbols-outlined text-[20px]">logout</span>
+</button>
+</div>
+</header>
+<!-- Scrollable Canvas -->
+<main class="flex-1 overflow-y-auto p-container-padding bg-background pb-20">
+<!-- Page Header & Actions -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+<div>
+<h2 class="font-display-sm text-display-sm text-on-surface tracking-tight">Insights Overview</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Real-time domain metrics and operational status signals.</p>
+</div>
+<div class="flex items-center gap-3">
+<!-- Filter Context Menu Action -->
+<button class="h-row-height-sm px-3 flex items-center gap-2 border border-outline-variant bg-surface-container-lowest hover:bg-surface-container-low rounded text-on-surface font-label-md text-label-md transition-colors">
+<span class="material-symbols-outlined text-[16px]">filter_list</span>
+                            Filter Insights
+                        </button>
+<!-- Export Summary Action -->
+<button class="h-row-height-sm px-4 flex items-center gap-2 bg-primary text-on-primary rounded font-label-md text-label-md hover:bg-primary-fixed-dim transition-colors font-semibold shadow-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">download</span>
+                            Export Report
+                        </button>
+</div>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-12 gap-unit-4">
+<!-- KPI Card 1: MTTR -->
+<div class="col-span-12 md:col-span-4 bg-surface-container border border-outline-variant rounded p-4 flex flex-col justify-between min-h-[120px] hover:border-primary/50 transition-colors">
+<div class="flex justify-between items-start mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Mean Time to Repair</span>
+<span class="material-symbols-outlined text-outline text-[18px]">build</span>
+</div>
+<div class="flex items-end gap-3">
+<span class="font-display-sm text-display-sm text-on-surface font-mono tracking-tighter">4.2h</span>
+<div class="flex items-center gap-1 font-label-md text-label-md text-tertiary bg-tertiary/10 border border-tertiary/30 px-1.5 py-0.5 rounded-sm mb-1">
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span>
+<span>12%</span>
+</div>
+</div>
+</div>
+<!-- KPI Card 2: Uptime -->
+<div class="col-span-12 md:col-span-4 bg-surface-container border border-outline-variant rounded p-4 flex flex-col justify-between min-h-[120px] hover:border-primary/50 transition-colors">
+<div class="flex justify-between items-start mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">System Uptime</span>
+<span class="material-symbols-outlined text-outline text-[18px]">power</span>
+</div>
+<div class="flex items-end gap-3">
+<span class="font-display-sm text-display-sm text-on-surface font-mono tracking-tighter">98.4%</span>
+<div class="flex items-center gap-1 font-label-md text-label-md text-tertiary bg-tertiary/10 border border-tertiary/30 px-1.5 py-0.5 rounded-sm mb-1">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+<span>0.2%</span>
+</div>
+</div>
+</div>
+<!-- KPI Card 3: Parts Inventory -->
+<div class="col-span-12 md:col-span-4 bg-surface-container border border-outline-variant rounded p-4 flex flex-col justify-between min-h-[120px] relative overflow-hidden group hover:border-error/50 transition-colors">
+<div class="absolute top-0 right-0 w-16 h-16 bg-error/5 rounded-bl-full -z-0"></div>
+<div class="flex justify-between items-start mb-2 relative z-10">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Parts Inventory Low</span>
+<span class="material-symbols-outlined text-error text-[18px]">warning</span>
+</div>
+<div class="flex items-end gap-3 relative z-10">
+<span class="font-display-sm text-display-sm text-error font-mono tracking-tighter">12 items</span>
+<div class="flex items-center gap-1 font-label-md text-label-md text-error bg-error/10 border border-error/30 px-1.5 py-0.5 rounded-sm mb-1">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>Action Req.</span>
+</div>
+</div>
+</div>
+<!-- State Distribution Chart -->
+<div class="col-span-12 lg:col-span-8 bg-surface-container border border-outline-variant rounded flex flex-col p-5">
+<div class="flex justify-between items-center mb-6">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">State Distribution</h3>
+<span class="font-label-md text-label-md text-on-surface-variant">Equipment health across zones</span>
+</div>
+<!-- Custom Segmented Bar -->
+<div class="w-full h-8 flex rounded overflow-hidden border border-surface-dim mb-4 bg-surface-dim">
+<div class="h-full bg-tertiary flex items-center justify-center font-label-sm text-on-tertiary-fixed" style="width: 75%;" title="Operational: 75%">75%</div>
+<div class="h-full bg-secondary flex items-center justify-center font-label-sm text-on-secondary" style="width: 15%;" title="Maintenance: 15%">15%</div>
+<div class="h-full bg-error flex items-center justify-center font-label-sm text-on-error" style="width: 10%;" title="Critical: 10%">10%</div>
+</div>
+<!-- Legend -->
+<div class="flex gap-6 mt-auto">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-sm bg-tertiary"></div>
+<span class="font-label-md text-label-md text-on-surface-variant">Operational (142)</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-sm bg-secondary"></div>
+<span class="font-label-md text-label-md text-on-surface-variant">Maintenance (28)</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-sm bg-error"></div>
+<span class="font-label-md text-label-md text-on-surface-variant">Critical (18)</span>
+</div>
+</div>
+</div>
+<!-- Actionable Hints Section -->
+<div class="col-span-12 lg:col-span-4 bg-surface-container border border-secondary/50 rounded flex flex-col relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-secondary"></div>
+<div class="p-5 flex flex-col h-full">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+<h3 class="font-headline-sm text-headline-sm text-secondary">Actionable Hints</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-4">
+<span class="font-bold text-on-surface">3 Work Orders</span> are nearing SLA breach. Consider re-assigning resources to Zone B to prevent penalties.
+                            </p>
+<button class="mt-auto h-row-height-sm w-full border border-secondary text-secondary hover:bg-secondary/10 rounded font-label-md text-label-md transition-colors">
+                                Review Queue
+                            </button>
+</div>
+</div>
+<!-- Recent Activity Feed -->
+<div class="col-span-12 bg-surface-container border border-outline-variant rounded p-5">
+<div class="flex justify-between items-center mb-4 border-b border-outline-variant pb-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Recent Activity</h3>
+<button class="font-label-md text-label-md text-primary hover:text-primary-fixed transition-colors">View All Logs</button>
+</div>
+<div class="flex flex-col gap-2">
+<!-- Log Item 1 -->
+<div class="flex items-start gap-4 p-2 rounded hover:bg-surface-container-high transition-colors">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0 border border-primary/20">
+<span class="material-symbols-outlined text-primary text-[16px]">play_arrow</span>
+</div>
+<div class="flex-1 min-w-0 pt-1">
+<p class="font-body-sm text-body-sm text-on-surface">
+                                        Technician Miller started <a class="text-primary hover:underline font-mono" href="#">#WO-410</a>
+</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">2 mins ago · Zone C</p>
+</div>
+</div>
+<!-- Log Item 2 -->
+<div class="flex items-start gap-4 p-2 rounded hover:bg-surface-container-high transition-colors">
+<div class="w-8 h-8 rounded-full bg-tertiary/10 flex items-center justify-center shrink-0 border border-tertiary/20">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+</div>
+<div class="flex-1 min-w-0 pt-1">
+<p class="font-body-sm text-body-sm text-on-surface">
+                                        Conveyor-A1 marked <span class="inline-flex items-center px-1.5 py-0.5 rounded-sm bg-tertiary/10 border border-tertiary/30 text-tertiary font-label-md text-label-sm">Operational</span>
+</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">14 mins ago · Main Hub</p>
+</div>
+</div>
+<!-- Log Item 3 -->
+<div class="flex items-start gap-4 p-2 rounded hover:bg-surface-container-high transition-colors">
+<div class="w-8 h-8 rounded-full bg-surface-dim flex items-center justify-center shrink-0 border border-outline-variant">
+<span class="material-symbols-outlined text-outline text-[16px]">sync</span>
+</div>
+<div class="flex-1 min-w-0 pt-1">
+<p class="font-body-sm text-body-sm text-on-surface">
+                                        Automated nightly sync completed successfully.
+                                    </p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">4 hours ago · System</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

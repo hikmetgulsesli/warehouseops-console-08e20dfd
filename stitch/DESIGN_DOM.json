@@ -1,0 +1,2891 @@
+{
+  "generatedAt": "2026-05-25T18:46:44.790Z",
+  "screenCount": 5,
+  "screens": {
+    "511c53f4103d4075b5d9cb7eacbba669": {
+      "screenId": "511c53f4103d4075b5d9cb7eacbba669",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "block",
+          "classes": [
+            "w-sidebar-width",
+            "h-screen",
+            "sticky",
+            "top-0",
+            "left-0",
+            "bg-surface-container-lowest",
+            "dark:bg-surface-container-lowest",
+            "border-r",
+            "border-outline-variant",
+            "dark:border-outline-variant"
+          ],
+          "childCount": 8
+        },
+        {
+          "tag": "header",
+          "layout": "block",
+          "classes": [
+            "h-row-height-md",
+            "w-full",
+            "sticky",
+            "top-0",
+            "z-10",
+            "bg-surface-container",
+            "dark:bg-surface-container",
+            "border-b",
+            "border-outline-variant",
+            "dark:border-outline-variant"
+          ],
+          "childCount": 5
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-1",
+            "overflow-y-auto",
+            "p-container-padding"
+          ],
+          "childCount": 42
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "notifications",
+          "classes": [
+            "w-8",
+            "h-8",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded",
+            "text-on-surface-variant",
+            "hover:text-on-surface",
+            "hover:bg-surface-container-high",
+            "transition-colors",
+            "active:scale-95",
+            "duration-150"
+          ],
+          "icon": "notifications",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/notifications",
+          "expectedRoute": "/notifications",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "help",
+          "classes": [
+            "w-8",
+            "h-8",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded",
+            "text-on-surface-variant",
+            "hover:text-on-surface",
+            "hover:bg-surface-container-high",
+            "transition-colors",
+            "active:scale-95",
+            "duration-150"
+          ],
+          "icon": "help",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/help",
+          "expectedRoute": "/help",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "Logout",
+          "classes": [
+            "w-8",
+            "h-8",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded",
+            "text-error",
+            "hover:bg-error/10",
+            "transition-colors",
+            "active:scale-95",
+            "duration-150"
+          ],
+          "icon": "logout",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/logout",
+          "expectedRoute": "/logout",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "Enable high density mode",
+          "classes": [
+            "relative",
+            "inline-flex",
+            "h-6",
+            "w-11",
+            "items-center",
+            "rounded-full",
+            "bg-surface-container-highest",
+            "border",
+            "border-outline-variant",
+            "transition-colors",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-primary",
+            "focus:ring-offset-2",
+            "focus:ring-offset-surface"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Edit",
+          "classes": [
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "transition-colors",
+            "p-1"
+          ],
+          "icon": "edit",
+          "action": "edit",
+          "expectedBehavior": "open edit flow or update selected item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Delete",
+          "classes": [
+            "text-on-surface-variant",
+            "hover:text-error",
+            "transition-colors",
+            "p-1"
+          ],
+          "icon": "delete",
+          "action": "destructive",
+          "expectedBehavior": "perform destructive action with visible feedback or confirmation"
+        },
+        {
+          "kind": "button",
+          "label": "Reset to Defaults",
+          "classes": [
+            "font-label-md",
+            "text-label-md",
+            "text-on-surface-variant",
+            "hover:text-error",
+            "border",
+            "border-transparent",
+            "hover:border-error",
+            "hover:bg-error/10",
+            "px-4",
+            "py-2",
+            "rounded",
+            "transition-all"
+          ],
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "Preferences",
+          "classes": [
+            "font-label-md",
+            "text-label-md",
+            "bg-primary",
+            "text-on-primary",
+            "hover:bg-primary-fixed",
+            "border",
+            "border-primary",
+            "px-6",
+            "py-2",
+            "rounded",
+            "flex",
+            "items-center",
+            "gap-2",
+            "transition-colors",
+            "active:scale-95",
+            "shadow-sm"
+          ],
+          "icon": "save",
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "widgets",
+          "classes": [],
+          "icon": "widgets",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "WarehouseOps Console v1.0",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "person",
+          "classes": [],
+          "icon": "person",
+          "action": "navigate",
+          "expectedRoute": "/profile",
+          "routeInferred": true,
+          "expectedBehavior": "navigate:/profile"
+        },
+        {
+          "kind": "button",
+          "label": "Operator ID: 8492",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Search parameters...",
+          "placeholder": "Search parameters...",
+          "name": "",
+          "classes": [
+            "w-full",
+            "bg-surface-container-lowest",
+            "border",
+            "border-outline-variant",
+            "rounded",
+            "font-label-md",
+            "text-label-md",
+            "text-on-surface",
+            "py-1",
+            "pl-8",
+            "pr-3",
+            "focus:outline-none",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary",
+            "placeholder:text-on-surface-variant/50",
+            "transition-colors"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "select",
+          "label": "landing-view",
+          "placeholder": "",
+          "name": "landing-view",
+          "classes": [
+            "w-full",
+            "appearance-none",
+            "bg-surface",
+            "border",
+            "border-outline-variant",
+            "rounded",
+            "font-body-md",
+            "text-body-md",
+            "text-on-surface",
+            "py-2",
+            "pl-3",
+            "pr-10",
+            "focus:outline-none",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "checkbox",
+          "label": "checkbox",
+          "placeholder": "",
+          "name": "",
+          "classes": [
+            "industrial-checkbox"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Item Operations",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "inventory_2",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Queue & Status",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "pending_actions",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "monitoring",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "widgets",
+        "pending_actions",
+        "monitoring",
+        "settings",
+        "person",
+        "search",
+        "notifications",
+        "help",
+        "logout",
+        "display_settings",
+        "arrow_drop_down",
+        "filter_alt",
+        "edit",
+        "delete",
+        "notifications_active",
+        "save",
+        "check_circle",
+        "sync"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "surface-dim": "#0b1326",
+        "on-tertiary-fixed": "#002113",
+        "on-secondary": "#3c2f00",
+        "surface-bright": "#31394d",
+        "on-primary-container": "#eeefff",
+        "inverse-primary": "#0053db",
+        "tertiary": "#4edea3",
+        "primary-fixed-dim": "#b4c5ff",
+        "secondary": "#ffe083",
+        "surface-container-low": "#131b2e",
+        "secondary-fixed": "#ffe083",
+        "surface-container": "#171f33",
+        "on-primary": "#002a78",
+        "tertiary-fixed-dim": "#4edea3",
+        "surface-container-lowest": "#060e20",
+        "on-surface-variant": "#c3c6d7",
+        "on-tertiary": "#003824",
+        "outline-variant": "#434655",
+        "primary-fixed": "#dbe1ff",
+        "inverse-on-surface": "#283044",
+        "error": "#ffb4ab",
+        "on-secondary-fixed": "#231b00",
+        "on-secondary-container": "#645000",
+        "on-primary-fixed": "#00174b",
+        "primary": "#b4c5ff",
+        "surface-tint": "#b4c5ff",
+        "secondary-fixed-dim": "#eec200",
+        "surface-variant": "#2d3449",
+        "tertiary-fixed": "#6ffbbe",
+        "background": "#0b1326",
+        "surface-container-high": "#222a3d",
+        "on-tertiary-container": "#bdffdb",
+        "error-container": "#93000a",
+        "on-error": "#690005",
+        "surface-container-highest": "#2d3449",
+        "on-error-container": "#ffdad6",
+        "on-surface": "#dae2fd",
+        "outline": "#8d90a0",
+        "on-background": "#dae2fd",
+        "primary-container": "#2563eb",
+        "surface": "#0b1326",
+        "inverse-surface": "#dae2fd",
+        "on-primary-fixed-variant": "#003ea8",
+        "on-tertiary-fixed-variant": "#005236",
+        "secondary-container": "#eec200",
+        "tertiary-container": "#007d55",
+        "on-secondary-fixed-variant": "#574500"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "Inter",
+        "JetBrains Mono"
+      ],
+      "layoutHints": {
+        "flexDirection": "col",
+        "gap": "3"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Item Operations",
+          "icon": "inventory_2",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Queue & Status",
+          "icon": "pending_actions",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "icon": "monitoring",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "notifications",
+          "icon": "notifications",
+          "action": "navigate",
+          "route": "/notifications",
+          "expectedBehavior": "navigate:/notifications"
+        },
+        {
+          "kind": "button",
+          "label": "help",
+          "icon": "help",
+          "action": "navigate",
+          "route": "/help",
+          "expectedBehavior": "navigate:/help"
+        },
+        {
+          "kind": "button",
+          "label": "Logout",
+          "icon": "logout",
+          "action": "navigate",
+          "route": "/logout",
+          "expectedBehavior": "navigate:/logout"
+        },
+        {
+          "kind": "button",
+          "label": "Enable high density mode",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Edit",
+          "icon": "edit",
+          "action": "edit",
+          "expectedBehavior": "open edit flow or update selected item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Delete",
+          "icon": "delete",
+          "action": "destructive",
+          "expectedBehavior": "perform destructive action with visible feedback or confirmation"
+        },
+        {
+          "kind": "button",
+          "label": "Reset to Defaults",
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "Preferences",
+          "icon": "save",
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "widgets",
+          "icon": "widgets",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "WarehouseOps Console v1.0",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "person",
+          "icon": "person",
+          "action": "navigate",
+          "route": "/profile",
+          "expectedBehavior": "navigate:/profile"
+        },
+        {
+          "kind": "button",
+          "label": "Operator ID: 8492",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "input",
+          "label": "Search parameters...",
+          "type": "text",
+          "placeholder": "Search parameters...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "landing-view",
+          "type": "select",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "checkbox",
+          "type": "checkbox",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "widgets",
+          "icon": "widgets",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "WarehouseOps Console v1.0",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Item Operations",
+          "icon": "inventory_2",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Queue & Status",
+          "icon": "pending_actions",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "icon": "monitoring",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "person",
+          "icon": "person",
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "Operator ID: 8492",
+          "icon": null,
+          "active": false
+        }
+      ],
+      "title": "Settings and Preferences - WarehouseOps Console"
+    },
+    "6ec1315d87df440aac8e1ccecb2bc250": {
+      "screenId": "6ec1315d87df440aac8e1ccecb2bc250",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "aside",
+          "layout": "flex-col",
+          "classes": [
+            "w-sidebar-width",
+            "h-screen",
+            "sticky",
+            "top-0",
+            "left-0",
+            "bg-surface-container-lowest",
+            "border-r",
+            "border-outline-variant",
+            "flex",
+            "flex-col"
+          ],
+          "childCount": 6
+        },
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "h-row-height-md",
+            "w-full",
+            "sticky",
+            "top-0",
+            "z-10",
+            "bg-surface-container",
+            "border-b",
+            "border-outline-variant",
+            "flex",
+            "justify-between"
+          ],
+          "childCount": 4
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-1",
+            "overflow-y-auto",
+            "p-container-padding",
+            "bg-background",
+            "pb-20"
+          ],
+          "childCount": 46
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "notifications",
+          "classes": [
+            "w-8",
+            "h-8",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded",
+            "text-on-surface-variant",
+            "hover:text-on-surface",
+            "hover:bg-surface-container-high",
+            "transition-all",
+            "hover:scale-95"
+          ],
+          "icon": "notifications",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/notifications",
+          "expectedRoute": "/notifications",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "help",
+          "classes": [
+            "w-8",
+            "h-8",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded",
+            "text-on-surface-variant",
+            "hover:text-on-surface",
+            "hover:bg-surface-container-high",
+            "transition-all",
+            "hover:scale-95"
+          ],
+          "icon": "help",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/help",
+          "expectedRoute": "/help",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "logout",
+          "classes": [
+            "w-8",
+            "h-8",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded",
+            "text-error",
+            "hover:bg-error/10",
+            "transition-all",
+            "hover:scale-95"
+          ],
+          "icon": "logout",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/logout",
+          "expectedRoute": "/logout",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "Filter Insights",
+          "classes": [
+            "h-row-height-sm",
+            "px-3",
+            "flex",
+            "items-center",
+            "gap-2",
+            "border",
+            "border-outline-variant",
+            "bg-surface-container-lowest",
+            "hover:bg-surface-container-low",
+            "rounded",
+            "text-on-surface",
+            "font-label-md",
+            "text-label-md",
+            "transition-colors"
+          ],
+          "icon": "filter_list",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "Export Report",
+          "classes": [
+            "h-row-height-sm",
+            "px-4",
+            "flex",
+            "items-center",
+            "gap-2",
+            "bg-primary",
+            "text-on-primary",
+            "rounded",
+            "font-label-md",
+            "text-label-md",
+            "hover:bg-primary-fixed-dim",
+            "transition-colors",
+            "font-semibold",
+            "shadow-sm"
+          ],
+          "icon": "download",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Review Queue",
+          "classes": [
+            "mt-auto",
+            "h-row-height-sm",
+            "w-full",
+            "border",
+            "border-secondary",
+            "text-secondary",
+            "hover:bg-secondary/10",
+            "rounded",
+            "font-label-md",
+            "text-label-md",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "View All Logs",
+          "classes": [
+            "font-label-md",
+            "text-label-md",
+            "text-primary",
+            "hover:text-primary-fixed",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Search operations, assets, or IDs...",
+          "placeholder": "Search operations, assets, or IDs...",
+          "name": "",
+          "classes": [
+            "w-full",
+            "bg-surface-dim",
+            "border",
+            "border-outline-variant",
+            "rounded",
+            "py-1.5",
+            "pl-9",
+            "pr-3",
+            "font-label-md",
+            "text-label-md",
+            "text-on-surface",
+            "focus:outline-none",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary",
+            "placeholder-outline",
+            "transition-colors"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Item Operations",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "inventory_2",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Queue & Status",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "pending_actions",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "href": "#",
+          "classes": [
+            "font-bold"
+          ],
+          "icon": "monitoring",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "#WO-410",
+          "href": "#",
+          "classes": [
+            "text-primary",
+            "hover:underline",
+            "font-mono"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "widgets",
+        "pending_actions",
+        "monitoring",
+        "settings",
+        "search",
+        "notifications",
+        "help",
+        "logout",
+        "filter_list",
+        "download",
+        "build",
+        "arrow_downward",
+        "power",
+        "arrow_upward",
+        "warning",
+        "trending_up",
+        "lightbulb",
+        "play_arrow",
+        "check_circle",
+        "sync"
+      ],
+      "images": [
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAl2Bvht6aKQgjL0oxAVBU4SsOBlXS7m4Hj6_TeWpZd9UPjMtcXo-FSiZfSgRP8sGWdK9zmSM20KVZcGWG0pCjw9CgAKc9t_v1m8eJby6hpEpKFWzg_w_JTcqDxfVhSBph9RCbpVJYHK6HU5-7-Aa",
+          "alt": "User profile"
+        }
+      ],
+      "cssVars": {},
+      "colorPalette": {
+        "surface-dim": "#0b1326",
+        "on-tertiary-fixed": "#002113",
+        "on-secondary": "#3c2f00",
+        "surface-bright": "#31394d",
+        "on-primary-container": "#eeefff",
+        "inverse-primary": "#0053db",
+        "tertiary": "#4edea3",
+        "primary-fixed-dim": "#b4c5ff",
+        "secondary": "#ffe083",
+        "surface-container-low": "#131b2e",
+        "secondary-fixed": "#ffe083",
+        "surface-container": "#171f33",
+        "on-primary": "#002a78",
+        "tertiary-fixed-dim": "#4edea3",
+        "surface-container-lowest": "#060e20",
+        "on-surface-variant": "#c3c6d7",
+        "on-tertiary": "#003824",
+        "outline-variant": "#434655",
+        "primary-fixed": "#dbe1ff",
+        "inverse-on-surface": "#283044",
+        "error": "#ffb4ab",
+        "on-secondary-fixed": "#231b00",
+        "on-secondary-container": "#645000",
+        "on-primary-fixed": "#00174b",
+        "primary": "#b4c5ff",
+        "surface-tint": "#b4c5ff",
+        "secondary-fixed-dim": "#eec200",
+        "surface-variant": "#2d3449",
+        "tertiary-fixed": "#6ffbbe",
+        "background": "#0b1326",
+        "surface-container-high": "#222a3d",
+        "on-tertiary-container": "#bdffdb",
+        "error-container": "#93000a",
+        "on-error": "#690005",
+        "surface-container-highest": "#2d3449",
+        "on-error-container": "#ffdad6",
+        "on-surface": "#dae2fd",
+        "outline": "#8d90a0",
+        "on-background": "#dae2fd",
+        "primary-container": "#2563eb",
+        "surface": "#0b1326",
+        "inverse-surface": "#dae2fd",
+        "on-primary-fixed-variant": "#003ea8",
+        "on-tertiary-fixed-variant": "#005236",
+        "secondary-container": "#eec200",
+        "tertiary-container": "#007d55",
+        "on-secondary-fixed-variant": "#574500"
+      },
+      "fonts": [
+        "Inter",
+        "JetBrains Mono",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "gridCols": 12,
+        "flexDirection": "col",
+        "gap": "3"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Item Operations",
+          "icon": "inventory_2",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Queue & Status",
+          "icon": "pending_actions",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "icon": "monitoring",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "#WO-410",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "notifications",
+          "icon": "notifications",
+          "action": "navigate",
+          "route": "/notifications",
+          "expectedBehavior": "navigate:/notifications"
+        },
+        {
+          "kind": "button",
+          "label": "help",
+          "icon": "help",
+          "action": "navigate",
+          "route": "/help",
+          "expectedBehavior": "navigate:/help"
+        },
+        {
+          "kind": "button",
+          "label": "logout",
+          "icon": "logout",
+          "action": "navigate",
+          "route": "/logout",
+          "expectedBehavior": "navigate:/logout"
+        },
+        {
+          "kind": "button",
+          "label": "Filter Insights",
+          "icon": "filter_list",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "Export Report",
+          "icon": "download",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Review Queue",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "View All Logs",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "input",
+          "label": "Search operations, assets, or IDs...",
+          "type": "text",
+          "placeholder": "Search operations, assets, or IDs...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "link",
+          "label": "Item Operations",
+          "icon": "inventory_2",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Queue & Status",
+          "icon": "pending_actions",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "icon": "monitoring",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "active": false
+        }
+      ],
+      "title": "Insights - WarehouseOps Console"
+    },
+    "78461ea238fc4763ba0cc646575b0181": {
+      "screenId": "78461ea238fc4763ba0cc646575b0181",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "flex-col",
+          "classes": [
+            "w-sidebar-width",
+            "h-screen",
+            "sticky",
+            "top-0",
+            "left-0",
+            "bg-surface-container-lowest",
+            "border-r",
+            "border-outline-variant",
+            "flex",
+            "flex-col"
+          ],
+          "childCount": 10
+        },
+        {
+          "tag": "main",
+          "layout": "flex-col",
+          "classes": [
+            "flex-1",
+            "flex",
+            "flex-col",
+            "min-w-0",
+            "h-screen",
+            "overflow-hidden",
+            "bg-surface"
+          ],
+          "childCount": 32
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Notifications",
+          "classes": [
+            "hover:text-on-surface",
+            "transition-colors",
+            "duration-150",
+            "active:scale-95"
+          ],
+          "icon": "notifications",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/notifications",
+          "expectedRoute": "/notifications",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "Help",
+          "classes": [
+            "hover:text-on-surface",
+            "transition-colors",
+            "duration-150",
+            "active:scale-95"
+          ],
+          "icon": "help",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/help",
+          "expectedRoute": "/help",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "Logout",
+          "classes": [
+            "hover:text-on-surface",
+            "transition-colors",
+            "duration-150",
+            "active:scale-95"
+          ],
+          "icon": "logout",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/logout",
+          "expectedRoute": "/logout",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "Create New Item",
+          "classes": [
+            "bg-primary-container",
+            "hover:bg-primary-fixed-variant",
+            "text-on-primary-container",
+            "font-label-md",
+            "text-label-md",
+            "py-1",
+            "px-3",
+            "rounded",
+            "flex",
+            "items-center",
+            "gap-2",
+            "transition-colors",
+            "h-8",
+            "border",
+            "border-primary-container"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Retry Load",
+          "classes": [
+            "bg-transparent",
+            "border",
+            "border-outline-variant",
+            "text-on-surface",
+            "hover:bg-surface-container",
+            "px-4",
+            "py-1.5",
+            "rounded",
+            "font-label-md",
+            "text-label-md",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "gap-2"
+          ],
+          "icon": "refresh",
+          "action": "retry",
+          "expectedBehavior": "retry the failed action and show loading/error feedback"
+        },
+        {
+          "kind": "button",
+          "label": "close",
+          "classes": [
+            "text-on-surface-variant",
+            "hover:text-on-surface",
+            "transition-colors"
+          ],
+          "icon": "close",
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "Dispatch Technician",
+          "classes": [
+            "w-full",
+            "bg-primary-container",
+            "hover:bg-primary-fixed-variant",
+            "text-on-primary-container",
+            "font-label-md",
+            "text-label-md",
+            "py-2",
+            "px-4",
+            "rounded",
+            "transition-colors",
+            "text-center",
+            "border",
+            "border-primary-container"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "View Full History",
+          "classes": [
+            "w-full",
+            "bg-transparent",
+            "border",
+            "border-outline-variant",
+            "hover:border-outline",
+            "text-on-surface",
+            "font-label-md",
+            "text-label-md",
+            "py-2",
+            "px-4",
+            "rounded",
+            "transition-colors",
+            "text-center"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "WarehouseOps Console v1.0",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Admin User Night Shift",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Global search...",
+          "placeholder": "Global search...",
+          "name": "ACT_SEARCH_RECORDS",
+          "classes": [
+            "w-full",
+            "bg-surface-container-highest",
+            "border",
+            "border-outline-variant",
+            "text-on-surface",
+            "rounded",
+            "py-1",
+            "pl-9",
+            "pr-3",
+            "focus:outline-none",
+            "focus:border-primary-container",
+            "focus:ring-1",
+            "focus:ring-primary-container",
+            "transition-shadow",
+            "font-label-md",
+            "text-label-md",
+            "h-8"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "select",
+          "label": "select",
+          "placeholder": "",
+          "name": "",
+          "classes": [
+            "bg-surface-container-highest",
+            "border",
+            "border-outline-variant",
+            "text-on-surface",
+            "rounded",
+            "py-1",
+            "px-2",
+            "font-label-sm",
+            "text-label-sm",
+            "h-7",
+            "focus:ring-1",
+            "focus:ring-primary-container",
+            "focus:border-primary-container",
+            "outline-none"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Item Operations",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "inventory_2",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Queue & Status",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "pending_actions",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "monitoring",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "pending_actions",
+        "monitoring",
+        "settings",
+        "unfold_more",
+        "search",
+        "notifications",
+        "help",
+        "logout",
+        "build",
+        "warning",
+        "filter_list",
+        "add",
+        "wifi_off",
+        "refresh",
+        "close",
+        "report"
+      ],
+      "images": [
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCYCIt006U1DWIlHVnY-2ZGVn4YTnCQffGxW7Nri9dEbBU2K-PmrrkvFSLsaqDiubDDgeR7JtWAdArcrQy0GyG0L7BJLh3ywlz9azKPeW96A7m89X3bfDdNJzAQYxHbllIR1oCjZGhtfImC0_RJt2",
+          "alt": "WarehouseOps Logo"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuC6MdJcAHTX2qBcG6vWMWk-wSYDYdZac8DZX-nzbk66HqgZ4h07-fjEQ_d8gR03RUT77OwUmaFpsISAJBxQmPaRjduq8xg24IZgQ8phjQx5eirJ_N1UiefQsTvgXN_xduvqJQlT9qXu8LeJNE9LZo",
+          "alt": "User profile"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuD7Is97FPgRx09HznM2hj8WpCJ82RObodAfFj_z9TMrdlOCA-0P37JDKrrQb-0zKa-T2XSatyT-oS1wj0vnjSaO0qE7Z3Bdvqb3yv_gRdQVeV3MdRJL-JBsYdNTR15AYDBpEW6NxPYxY_CinqXP-D",
+          "alt": "Tech Avatar"
+        }
+      ],
+      "cssVars": {},
+      "colorPalette": {
+        "surface-dim": "#0b1326",
+        "on-tertiary-fixed": "#002113",
+        "on-secondary": "#3c2f00",
+        "surface-bright": "#31394d",
+        "on-primary-container": "#eeefff",
+        "inverse-primary": "#0053db",
+        "tertiary": "#4edea3",
+        "primary-fixed-dim": "#b4c5ff",
+        "secondary": "#ffe083",
+        "surface-container-low": "#131b2e",
+        "secondary-fixed": "#ffe083",
+        "surface-container": "#171f33",
+        "on-primary": "#002a78",
+        "tertiary-fixed-dim": "#4edea3",
+        "surface-container-lowest": "#060e20",
+        "on-surface-variant": "#c3c6d7",
+        "on-tertiary": "#003824",
+        "outline-variant": "#434655",
+        "primary-fixed": "#dbe1ff",
+        "inverse-on-surface": "#283044",
+        "error": "#ffb4ab",
+        "on-secondary-fixed": "#231b00",
+        "on-secondary-container": "#645000",
+        "on-primary-fixed": "#00174b",
+        "primary": "#b4c5ff",
+        "surface-tint": "#b4c5ff",
+        "secondary-fixed-dim": "#eec200",
+        "surface-variant": "#2d3449",
+        "tertiary-fixed": "#6ffbbe",
+        "background": "#0b1326",
+        "surface-container-high": "#222a3d",
+        "on-tertiary-container": "#bdffdb",
+        "error-container": "#93000a",
+        "on-error": "#690005",
+        "surface-container-highest": "#2d3449",
+        "on-error-container": "#ffdad6",
+        "on-surface": "#dae2fd",
+        "outline": "#8d90a0",
+        "on-background": "#dae2fd",
+        "primary-container": "#2563eb",
+        "surface": "#0b1326",
+        "inverse-surface": "#dae2fd",
+        "on-primary-fixed-variant": "#003ea8",
+        "on-tertiary-fixed-variant": "#005236",
+        "secondary-container": "#eec200",
+        "tertiary-container": "#007d55",
+        "on-secondary-fixed-variant": "#574500"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "Inter",
+        "JetBrains Mono"
+      ],
+      "layoutHints": {
+        "gridCols": 2,
+        "flexDirection": "col",
+        "gap": "3"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Item Operations",
+          "icon": "inventory_2",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Queue & Status",
+          "icon": "pending_actions",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "icon": "monitoring",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "Notifications",
+          "icon": "notifications",
+          "action": "navigate",
+          "route": "/notifications",
+          "expectedBehavior": "navigate:/notifications"
+        },
+        {
+          "kind": "button",
+          "label": "Help",
+          "icon": "help",
+          "action": "navigate",
+          "route": "/help",
+          "expectedBehavior": "navigate:/help"
+        },
+        {
+          "kind": "button",
+          "label": "Logout",
+          "icon": "logout",
+          "action": "navigate",
+          "route": "/logout",
+          "expectedBehavior": "navigate:/logout"
+        },
+        {
+          "kind": "button",
+          "label": "Create New Item",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Retry Load",
+          "icon": "refresh",
+          "action": "retry",
+          "expectedBehavior": "retry the failed action and show loading/error feedback"
+        },
+        {
+          "kind": "button",
+          "label": "close",
+          "icon": "close",
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "Dispatch Technician",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "View Full History",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "WarehouseOps Console v1.0",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Admin User Night Shift",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "input",
+          "label": "Global search...",
+          "type": "text",
+          "placeholder": "Global search...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "select",
+          "type": "select",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "WarehouseOps Console v1.0",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Item Operations",
+          "icon": "inventory_2",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Queue & Status",
+          "icon": "pending_actions",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "icon": "monitoring",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "Admin User Night Shift",
+          "icon": null,
+          "active": false
+        }
+      ],
+      "title": "Item Operations - WarehouseOps Console"
+    },
+    "d3161b05a05e41229198407982ca9d73": {
+      "screenId": "d3161b05a05e41229198407982ca9d73",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "flex-col",
+          "classes": [
+            "w-sidebar-width",
+            "h-screen",
+            "sticky",
+            "top-0",
+            "left-0",
+            "border-r",
+            "border-outline-variant",
+            "bg-surface-container-lowest",
+            "flex",
+            "flex-col"
+          ],
+          "childCount": 7
+        },
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "h-row-height-md",
+            "w-full",
+            "sticky",
+            "top-0",
+            "z-10",
+            "flex",
+            "justify-between",
+            "items-center",
+            "px-container-padding",
+            "gap-gutter-default"
+          ],
+          "childCount": 4
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-1",
+            "overflow-y-auto",
+            "p-container-padding"
+          ],
+          "childCount": 19
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "notifications",
+          "classes": [
+            "w-8",
+            "h-8",
+            "flex",
+            "items-center",
+            "justify-center",
+            "text-on-surface-variant",
+            "hover:text-on-surface",
+            "hover:bg-surface-container-low",
+            "rounded-DEFAULT",
+            "transition-colors"
+          ],
+          "icon": "notifications",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/notifications",
+          "expectedRoute": "/notifications",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "help",
+          "classes": [
+            "w-8",
+            "h-8",
+            "flex",
+            "items-center",
+            "justify-center",
+            "text-on-surface-variant",
+            "hover:text-on-surface",
+            "hover:bg-surface-container-low",
+            "rounded-DEFAULT",
+            "transition-colors"
+          ],
+          "icon": "help",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/help",
+          "expectedRoute": "/help",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "logout",
+          "classes": [
+            "w-8",
+            "h-8",
+            "flex",
+            "items-center",
+            "justify-center",
+            "text-on-surface-variant",
+            "hover:text-on-surface",
+            "hover:bg-surface-container-low",
+            "rounded-DEFAULT",
+            "transition-colors"
+          ],
+          "icon": "logout",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/logout",
+          "expectedRoute": "/logout",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "Cancel",
+          "classes": [
+            "h-row-height-sm",
+            "px-4",
+            "font-label-md",
+            "text-label-md",
+            "text-on-surface",
+            "border",
+            "border-outline-variant",
+            "rounded-DEFAULT",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-2"
+          ],
+          "icon": "close",
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "Changes",
+          "classes": [
+            "h-row-height-sm",
+            "px-6",
+            "font-label-md",
+            "text-label-md",
+            "text-on-primary",
+            "bg-primary",
+            "rounded-DEFAULT",
+            "hover:bg-primary-fixed",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-2",
+            "shadow-sm"
+          ],
+          "icon": "save",
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "warehouse",
+          "classes": [],
+          "icon": "warehouse",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "WarehouseOps Console v1.0",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Tech. Admin Shift A",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Search system...",
+          "placeholder": "Search system...",
+          "name": "",
+          "classes": [
+            "w-full",
+            "h-8",
+            "pl-9",
+            "pr-3",
+            "bg-surface-dim",
+            "border",
+            "border-outline-variant",
+            "rounded-DEFAULT",
+            "text-on-surface",
+            "font-body-sm",
+            "text-body-sm",
+            "focus:outline-none",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary",
+            "placeholder-on-surface-variant",
+            "transition-colors"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "itemId",
+          "placeholder": "",
+          "name": "itemId",
+          "classes": [
+            "h-10",
+            "bg-surface-container-lowest",
+            "border",
+            "border-outline-variant",
+            "text-on-surface-variant",
+            "font-label-md",
+            "text-label-md",
+            "rounded-DEFAULT",
+            "cursor-not-allowed",
+            "opacity-70",
+            "px-3"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "e.g. Primary Loading Forklift",
+          "placeholder": "e.g. Primary Loading Forklift",
+          "name": "displayName",
+          "classes": [
+            "w-full",
+            "h-10",
+            "bg-surface-dim",
+            "border",
+            "border-error",
+            "text-on-surface",
+            "font-body-md",
+            "text-body-md",
+            "rounded-DEFAULT",
+            "px-3",
+            "focus:outline-none",
+            "focus:border-error",
+            "focus:ring-2",
+            "focus:ring-error",
+            "focus:ring-opacity-50",
+            "transition-colors",
+            "pr-10"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "select",
+          "label": "maintType",
+          "placeholder": "",
+          "name": "maintType",
+          "classes": [
+            "w-full",
+            "h-10",
+            "bg-surface-dim",
+            "border",
+            "border-outline-variant",
+            "text-on-surface",
+            "font-body-md",
+            "text-body-md",
+            "rounded-DEFAULT",
+            "px-3",
+            "appearance-none",
+            "focus:outline-none",
+            "focus:border-primary",
+            "focus:ring-2",
+            "focus:ring-primary",
+            "focus:ring-opacity-50",
+            "transition-colors",
+            "cursor-pointer"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Search technician...",
+          "placeholder": "Search technician...",
+          "name": "techSelect",
+          "classes": [
+            "w-full",
+            "h-10",
+            "bg-surface-dim",
+            "border",
+            "border-outline-variant",
+            "text-on-surface",
+            "font-body-md",
+            "text-body-md",
+            "rounded-DEFAULT",
+            "pl-10",
+            "pr-3",
+            "focus:outline-none",
+            "focus:border-primary",
+            "focus:ring-2",
+            "focus:ring-primary",
+            "focus:ring-opacity-50",
+            "transition-colors"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "radio",
+          "label": "priority",
+          "placeholder": "",
+          "name": "priority",
+          "classes": [
+            "w-4",
+            "h-4",
+            "text-primary",
+            "bg-surface-container",
+            "border-outline-variant",
+            "focus:ring-primary",
+            "focus:ring-offset-surface-dim"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "textarea",
+          "label": "Detail the maintenance requirements...",
+          "placeholder": "Detail the maintenance requirements...",
+          "name": "description",
+          "classes": [
+            "w-full",
+            "bg-surface-dim",
+            "border",
+            "border-outline-variant",
+            "text-on-surface",
+            "font-body-md",
+            "text-body-md",
+            "rounded-DEFAULT",
+            "p-3",
+            "focus:outline-none",
+            "focus:border-primary",
+            "focus:ring-2",
+            "focus:ring-primary",
+            "focus:ring-opacity-50",
+            "transition-colors",
+            "resize-y"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Item Operations",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "inventory_2",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Queue & Status",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "pending_actions",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "monitoring",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Back to List",
+          "href": "#",
+          "classes": [
+            "font-label-md",
+            "text-label-md",
+            "ml-1"
+          ],
+          "icon": "arrow_back",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "warehouse",
+        "pending_actions",
+        "monitoring",
+        "settings",
+        "search",
+        "notifications",
+        "help",
+        "logout",
+        "arrow_back",
+        "error",
+        "warning",
+        "expand_more",
+        "person_search",
+        "close",
+        "save"
+      ],
+      "images": [
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuA6w1tKtt_CIfHtK2h2LOsJVoQZkNRrmP6EPHKlMzYHWmlC0wny551y5n-2CGYY6Z1osm0RTmRe0JrbUxiR9i8PaudOxsg8UZs8O5pVUfMDfLB2JYJcgdIN60JUKe1jLdQ4za1rjuRq6jAVCd3n43",
+          "alt": "User profile"
+        }
+      ],
+      "cssVars": {},
+      "colorPalette": {
+        "surface-dim": "#0b1326",
+        "on-tertiary-fixed": "#002113",
+        "on-secondary": "#3c2f00",
+        "surface-bright": "#31394d",
+        "on-primary-container": "#eeefff",
+        "inverse-primary": "#0053db",
+        "tertiary": "#4edea3",
+        "primary-fixed-dim": "#b4c5ff",
+        "secondary": "#ffe083",
+        "surface-container-low": "#131b2e",
+        "secondary-fixed": "#ffe083",
+        "surface-container": "#171f33",
+        "on-primary": "#002a78",
+        "tertiary-fixed-dim": "#4edea3",
+        "surface-container-lowest": "#060e20",
+        "on-surface-variant": "#c3c6d7",
+        "on-tertiary": "#003824",
+        "outline-variant": "#434655",
+        "primary-fixed": "#dbe1ff",
+        "inverse-on-surface": "#283044",
+        "error": "#ffb4ab",
+        "on-secondary-fixed": "#231b00",
+        "on-secondary-container": "#645000",
+        "on-primary-fixed": "#00174b",
+        "primary": "#b4c5ff",
+        "surface-tint": "#b4c5ff",
+        "secondary-fixed-dim": "#eec200",
+        "surface-variant": "#2d3449",
+        "tertiary-fixed": "#6ffbbe",
+        "background": "#0b1326",
+        "surface-container-high": "#222a3d",
+        "on-tertiary-container": "#bdffdb",
+        "error-container": "#93000a",
+        "on-error": "#690005",
+        "surface-container-highest": "#2d3449",
+        "on-error-container": "#ffdad6",
+        "on-surface": "#dae2fd",
+        "outline": "#8d90a0",
+        "on-background": "#dae2fd",
+        "primary-container": "#2563eb",
+        "surface": "#0b1326",
+        "inverse-surface": "#dae2fd",
+        "on-primary-fixed-variant": "#003ea8",
+        "on-tertiary-fixed-variant": "#005236",
+        "secondary-container": "#eec200",
+        "tertiary-container": "#007d55",
+        "on-secondary-fixed-variant": "#574500"
+      },
+      "fonts": [
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "gridCols": 1,
+        "flexDirection": "col",
+        "gap": "3"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Item Operations",
+          "icon": "inventory_2",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Queue & Status",
+          "icon": "pending_actions",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "icon": "monitoring",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Back to List",
+          "icon": "arrow_back",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "notifications",
+          "icon": "notifications",
+          "action": "navigate",
+          "route": "/notifications",
+          "expectedBehavior": "navigate:/notifications"
+        },
+        {
+          "kind": "button",
+          "label": "help",
+          "icon": "help",
+          "action": "navigate",
+          "route": "/help",
+          "expectedBehavior": "navigate:/help"
+        },
+        {
+          "kind": "button",
+          "label": "logout",
+          "icon": "logout",
+          "action": "navigate",
+          "route": "/logout",
+          "expectedBehavior": "navigate:/logout"
+        },
+        {
+          "kind": "button",
+          "label": "Cancel",
+          "icon": "close",
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "Changes",
+          "icon": "save",
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "warehouse",
+          "icon": "warehouse",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "WarehouseOps Console v1.0",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Tech. Admin Shift A",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "input",
+          "label": "Search system...",
+          "type": "text",
+          "placeholder": "Search system...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "itemId",
+          "type": "text",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "e.g. Primary Loading Forklift",
+          "type": "text",
+          "placeholder": "e.g. Primary Loading Forklift",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "maintType",
+          "type": "select",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "Search technician...",
+          "type": "text",
+          "placeholder": "Search technician...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "priority",
+          "type": "radio",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "Detail the maintenance requirements...",
+          "type": "textarea",
+          "placeholder": "Detail the maintenance requirements...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "warehouse",
+          "icon": "warehouse",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "WarehouseOps Console v1.0",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Item Operations",
+          "icon": "inventory_2",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Queue & Status",
+          "icon": "pending_actions",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "icon": "monitoring",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "Tech. Admin Shift A",
+          "icon": null,
+          "active": false
+        }
+      ],
+      "title": "Item Editor - WarehouseOps Console"
+    },
+    "d41f9c932b074be9ba6565e3659bb222": {
+      "screenId": "d41f9c932b074be9ba6565e3659bb222",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "block",
+          "classes": [
+            "w-sidebar-width",
+            "h-screen",
+            "sticky",
+            "top-0",
+            "left-0",
+            "bg-surface-container-lowest",
+            "dark:bg-surface-container-lowest",
+            "border-r",
+            "border-outline-variant",
+            "dark:border-outline-variant"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "main",
+          "layout": "flex-col",
+          "classes": [
+            "flex-1",
+            "flex",
+            "flex-col",
+            "h-screen",
+            "min-w-0",
+            "bg-background",
+            "overflow-hidden",
+            "relative",
+            "z-0"
+          ],
+          "childCount": 53
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "notifications",
+          "classes": [
+            "hover:text-on-surface",
+            "dark:hover:text-on-surface",
+            "transition-colors",
+            "relative"
+          ],
+          "icon": "notifications",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/notifications",
+          "expectedRoute": "/notifications",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "help",
+          "classes": [
+            "hover:text-on-surface",
+            "dark:hover:text-on-surface",
+            "transition-colors"
+          ],
+          "icon": "help",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/help",
+          "expectedRoute": "/help",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "JD",
+          "classes": [
+            "hover:text-on-surface",
+            "dark:hover:text-on-surface",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "gap-2"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Filter",
+          "classes": [
+            "px-3",
+            "py-1.5",
+            "rounded",
+            "border",
+            "border-outline-variant",
+            "bg-surface-container",
+            "hover:bg-surface-container-high",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "gap-1",
+            "text-on-surface"
+          ],
+          "icon": "filter_list",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "sort",
+          "classes": [
+            "px-3",
+            "py-1.5",
+            "rounded",
+            "border",
+            "border-outline-variant",
+            "bg-surface-container",
+            "hover:bg-surface-container-high",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "gap-1",
+            "text-on-surface"
+          ],
+          "icon": "sort",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "New Work Order",
+          "classes": [
+            "px-4",
+            "py-1.5",
+            "rounded",
+            "bg-primary",
+            "text-on-primary",
+            "font-label-md",
+            "text-label-md",
+            "font-bold",
+            "hover:bg-primary-fixed",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "gap-2",
+            "shadow-[0_0_0_1px_rgba(255,255,255,0.1)_inset]"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "more_horiz",
+          "classes": [
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "transition-colors",
+            "opacity-0",
+            "group-hover:opacity-100"
+          ],
+          "icon": "more_horiz",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Update",
+          "classes": [
+            "bg-surface-container-high",
+            "hover:bg-primary",
+            "hover:text-on-primary",
+            "text-on-surface",
+            "border",
+            "border-outline-variant",
+            "rounded",
+            "px-2",
+            "py-0.5",
+            "font-label-sm",
+            "text-[10px]",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "edit",
+          "expectedBehavior": "open edit flow or update selected item/state"
+        },
+        {
+          "kind": "button",
+          "label": "WarehouseOps Console v1.0",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Search Work Orders, IDs, Items...",
+          "placeholder": "Search Work Orders, IDs, Items...",
+          "name": "",
+          "classes": [
+            "w-full",
+            "bg-surface-dim",
+            "border",
+            "border-outline-variant",
+            "rounded",
+            "pl-10",
+            "pr-4",
+            "py-1.5",
+            "text-on-surface",
+            "focus:outline-none",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary",
+            "transition-all",
+            "text-body-sm",
+            "font-body-sm",
+            "placeholder:text-on-surface-variant/50"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Item Operations",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "inventory_2",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Queue & Status",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "pending_actions",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "monitoring",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "pending_actions",
+        "monitoring",
+        "settings",
+        "search",
+        "notifications",
+        "help",
+        "view_kanban",
+        "filter_list",
+        "sort",
+        "add",
+        "calendar_today",
+        "more_horiz",
+        "schedule",
+        "priority_high",
+        "block",
+        "timer",
+        "fact_check"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "surface-dim": "#0b1326",
+        "on-tertiary-fixed": "#002113",
+        "on-secondary": "#3c2f00",
+        "surface-bright": "#31394d",
+        "on-primary-container": "#eeefff",
+        "inverse-primary": "#0053db",
+        "tertiary": "#4edea3",
+        "primary-fixed-dim": "#b4c5ff",
+        "secondary": "#ffe083",
+        "surface-container-low": "#131b2e",
+        "secondary-fixed": "#ffe083",
+        "surface-container": "#171f33",
+        "on-primary": "#002a78",
+        "tertiary-fixed-dim": "#4edea3",
+        "surface-container-lowest": "#060e20",
+        "on-surface-variant": "#c3c6d7",
+        "on-tertiary": "#003824",
+        "outline-variant": "#434655",
+        "primary-fixed": "#dbe1ff",
+        "inverse-on-surface": "#283044",
+        "error": "#ffb4ab",
+        "on-secondary-fixed": "#231b00",
+        "on-secondary-container": "#645000",
+        "on-primary-fixed": "#00174b",
+        "primary": "#b4c5ff",
+        "surface-tint": "#b4c5ff",
+        "secondary-fixed-dim": "#eec200",
+        "surface-variant": "#2d3449",
+        "tertiary-fixed": "#6ffbbe",
+        "background": "#0b1326",
+        "surface-container-high": "#222a3d",
+        "on-tertiary-container": "#bdffdb",
+        "error-container": "#93000a",
+        "on-error": "#690005",
+        "surface-container-highest": "#2d3449",
+        "on-error-container": "#ffdad6",
+        "on-surface": "#dae2fd",
+        "outline": "#8d90a0",
+        "on-background": "#dae2fd",
+        "primary-container": "#2563eb",
+        "surface": "#0b1326",
+        "inverse-surface": "#dae2fd",
+        "on-primary-fixed-variant": "#003ea8",
+        "on-tertiary-fixed-variant": "#005236",
+        "secondary-container": "#eec200",
+        "tertiary-container": "#007d55",
+        "on-secondary-fixed-variant": "#574500"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "Inter",
+        "JetBrains Mono"
+      ],
+      "layoutHints": {
+        "flexDirection": "col",
+        "gap": "3"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Item Operations",
+          "icon": "inventory_2",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Queue & Status",
+          "icon": "pending_actions",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "icon": "monitoring",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "notifications",
+          "icon": "notifications",
+          "action": "navigate",
+          "route": "/notifications",
+          "expectedBehavior": "navigate:/notifications"
+        },
+        {
+          "kind": "button",
+          "label": "help",
+          "icon": "help",
+          "action": "navigate",
+          "route": "/help",
+          "expectedBehavior": "navigate:/help"
+        },
+        {
+          "kind": "button",
+          "label": "JD",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Filter",
+          "icon": "filter_list",
+          "action": "search",
+          "expectedBehavior": "filter/search visible results from input/query"
+        },
+        {
+          "kind": "button",
+          "label": "sort",
+          "icon": "sort",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "New Work Order",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "more_horiz",
+          "icon": "more_horiz",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Update",
+          "icon": null,
+          "action": "edit",
+          "expectedBehavior": "open edit flow or update selected item/state"
+        },
+        {
+          "kind": "button",
+          "label": "WarehouseOps Console v1.0",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "input",
+          "label": "Search Work Orders, IDs, Items...",
+          "type": "text",
+          "placeholder": "Search Work Orders, IDs, Items...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "WarehouseOps Console v1.0",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Item Operations",
+          "icon": "inventory_2",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Queue & Status",
+          "icon": "pending_actions",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Insights",
+          "icon": "monitoring",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "active": false
+        }
+      ],
+      "title": "Queue and Status Management - WarehouseOps Console"
+    }
+  }
+}

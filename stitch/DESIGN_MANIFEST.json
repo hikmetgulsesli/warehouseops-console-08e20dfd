@@ -1,0 +1,57 @@
+[
+  {
+    "screenId": "d41f9c932b074be9ba6565e3659bb222",
+    "title": "Queue and Status Management - WarehouseOps Console",
+    "htmlFile": "d41f9c932b074be9ba6565e3659bb222.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2VhMzAyYTAwN2VjMzQ5ZWQ5OGZlYjI2MzA1ZGIzOWUyEgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxODE0MjQ1NzczNTkyNjUyNTA0NQ&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/warehouseops-console-08e20dfd/stitch/d41f9c932b074be9ba6565e3659bb222.html",
+    "surfaceIds": [
+      "SURF_QUEUE_AND_STATUS_MANAGEMENT"
+    ]
+  },
+  {
+    "screenId": "78461ea238fc4763ba0cc646575b0181",
+    "title": "Item Operations - WarehouseOps Console",
+    "htmlFile": "78461ea238fc4763ba0cc646575b0181.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2RlYjVkYmZlZTgxNTRiNmVhNGU3OTA3YWViOGExOTMzEgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxODE0MjQ1NzczNTkyNjUyNTA0NQ&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/warehouseops-console-08e20dfd/stitch/78461ea238fc4763ba0cc646575b0181.html",
+    "surfaceIds": [
+      "SURF_ITEM_OPERATIONS"
+    ]
+  },
+  {
+    "screenId": "d3161b05a05e41229198407982ca9d73",
+    "title": "Item Editor - WarehouseOps Console",
+    "htmlFile": "d3161b05a05e41229198407982ca9d73.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sX2I4ZmE5OWU3OGI3OTRjOTJiNGM2ZDQ0NjJlNmM0NTQ3EgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxODE0MjQ1NzczNTkyNjUyNTA0NQ&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/warehouseops-console-08e20dfd/stitch/d3161b05a05e41229198407982ca9d73.html",
+    "surfaceIds": [
+      "SURF_ITEM_EDITOR"
+    ]
+  },
+  {
+    "screenId": "511c53f4103d4075b5d9cb7eacbba669",
+    "title": "Settings and Preferences - WarehouseOps Console",
+    "htmlFile": "511c53f4103d4075b5d9cb7eacbba669.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzc3YmFiYjZlZjA0YTQ1MGI4MmU3YmZhMDQ0MjU0OTIxEgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxODE0MjQ1NzczNTkyNjUyNTA0NQ&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/warehouseops-console-08e20dfd/stitch/511c53f4103d4075b5d9cb7eacbba669.html",
+    "surfaceIds": [
+      "SURF_SETTINGS_AND_PREFERENCES"
+    ]
+  },
+  {
+    "screenId": "6ec1315d87df440aac8e1ccecb2bc250",
+    "title": "Insights - WarehouseOps Console",
+    "htmlFile": "6ec1315d87df440aac8e1ccecb2bc250.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzQwZjg1N2MwZDNlOTQ1MzM5MWMxZDIzZjBjYmRlNTkwEgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxODE0MjQ1NzczNTkyNjUyNTA0NQ&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/warehouseops-console-08e20dfd/stitch/6ec1315d87df440aac8e1ccecb2bc250.html",
+    "surfaceIds": [
+      "SURF_INSIGHTS"
+    ]
+  }
+]

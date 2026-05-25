@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Item Editor - WarehouseOps Console</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<!-- Tailwind & Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#0b1326",
+                    "on-tertiary-fixed": "#002113",
+                    "on-secondary": "#3c2f00",
+                    "surface-bright": "#31394d",
+                    "on-primary-container": "#eeefff",
+                    "inverse-primary": "#0053db",
+                    "tertiary": "#4edea3",
+                    "primary-fixed-dim": "#b4c5ff",
+                    "secondary": "#ffe083",
+                    "surface-container-low": "#131b2e",
+                    "secondary-fixed": "#ffe083",
+                    "surface-container": "#171f33",
+                    "on-primary": "#002a78",
+                    "tertiary-fixed-dim": "#4edea3",
+                    "surface-container-lowest": "#060e20",
+                    "on-surface-variant": "#c3c6d7",
+                    "on-tertiary": "#003824",
+                    "outline-variant": "#434655",
+                    "primary-fixed": "#dbe1ff",
+                    "inverse-on-surface": "#283044",
+                    "error": "#ffb4ab",
+                    "on-secondary-fixed": "#231b00",
+                    "on-secondary-container": "#645000",
+                    "on-primary-fixed": "#00174b",
+                    "primary": "#b4c5ff",
+                    "surface-tint": "#b4c5ff",
+                    "secondary-fixed-dim": "#eec200",
+                    "surface-variant": "#2d3449",
+                    "tertiary-fixed": "#6ffbbe",
+                    "background": "#0b1326",
+                    "surface-container-high": "#222a3d",
+                    "on-tertiary-container": "#bdffdb",
+                    "error-container": "#93000a",
+                    "on-error": "#690005",
+                    "surface-container-highest": "#2d3449",
+                    "on-error-container": "#ffdad6",
+                    "on-surface": "#dae2fd",
+                    "outline": "#8d90a0",
+                    "on-background": "#dae2fd",
+                    "primary-container": "#2563eb",
+                    "surface": "#0b1326",
+                    "inverse-surface": "#dae2fd",
+                    "on-primary-fixed-variant": "#003ea8",
+                    "on-tertiary-fixed-variant": "#005236",
+                    "secondary-container": "#eec200",
+                    "tertiary-container": "#007d55",
+                    "on-secondary-fixed-variant": "#574500"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter-default": "1rem",
+                    "unit": "4px",
+                    "gutter-dense": "0.5rem",
+                    "sidebar-width": "240px",
+                    "row-height-sm": "32px",
+                    "container-padding": "1.5rem",
+                    "row-height-md": "40px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Inter", "sans-serif"],
+                    "body-md": ["Inter", "sans-serif"],
+                    "body-sm": ["Inter", "sans-serif"],
+                    "display-sm": ["Inter", "sans-serif"],
+                    "label-md": ["JetBrains Mono", "monospace"],
+                    "label-sm": ["JetBrains Mono", "monospace"]
+            },
+            "fontSize": {
+                    "headline-sm": ["18px", {"lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "body-sm": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+                    "display-sm": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "label-sm": ["10px", {"lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-surface-dim text-on-surface font-body-md text-body-md h-screen w-screen overflow-hidden flex">
+<!-- SideNavBar -->
+<nav class="w-sidebar-width h-screen sticky top-0 left-0 border-r border-outline-variant bg-surface-container-lowest flex flex-col py-gutter-default flex-shrink-0 z-20">
+<!-- Brand Header -->
+<div class="px-container-padding mb-8 flex items-center gap-3">
+<div class="w-8 h-8 rounded-DEFAULT bg-primary-container flex items-center justify-center flex-shrink-0 border border-outline-variant">
+<span class="material-symbols-outlined text-on-primary-container text-[20px]">warehouse</span>
+</div>
+<div>
+<h1 class="font-headline-sm text-headline-sm font-bold text-primary">WarehouseOps</h1>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Console v1.0</p>
+</div>
+</div>
+<!-- Navigation Links -->
+<div class="flex-1 flex flex-col">
+<!-- Active Tab: Item Operations -->
+<a class="flex items-center gap-3 px-4 py-3 text-primary border-l-4 border-primary bg-surface-container-high transition-colors duration-200" href="#">
+<span class="material-symbols-outlined icon-fill">inventory_2</span>
+<span class="font-label-md text-label-md">Item Operations</span>
+</a>
+<!-- Inactive Tabs -->
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-low transition-colors duration-200 border-l-4 border-transparent" href="#">
+<span class="material-symbols-outlined">pending_actions</span>
+<span class="font-label-md text-label-md">Queue &amp; Status</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-low transition-colors duration-200 border-l-4 border-transparent" href="#">
+<span class="material-symbols-outlined">monitoring</span>
+<span class="font-label-md text-label-md">Insights</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-low transition-colors duration-200 border-l-4 border-transparent" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-label-md text-label-md">Settings</span>
+</a>
+</div>
+<!-- User Avatar / Footer -->
+<div class="px-4 mt-auto">
+<div class="flex items-center gap-3 p-3 border border-outline-variant rounded-DEFAULT bg-surface-container-low">
+<img alt="User profile" class="w-8 h-8 rounded-DEFAULT border border-outline-variant" data-alt="A small, square user profile avatar placeholder with a dark blue background and light letters, simulating a generic user logged into an industrial system." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6w1tKtt_CIfHtK2h2LOsJVoQZkNRrmP6EPHKlMzYHWmlC0wny551y5n-2CGYY6Z1osm0RTmRe0JrbUxiR9i8PaudOxsg8UZs8O5pVUfMDfLB2JYJcgdIN60JUKe1jLdQ4za1rjuRq6jAVCd3n43YRbaeVJ8giCtB6rkR915NqJaXIPN_s_gzGO7O2JZK8XiWjYTZCXqwiNpaPNLju4wjSoEzKjlxoqtkcVZujPIt8qmWvck3nPzmHhLHCuyaFab9spARPJ_SdH6aa"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Tech. Admin</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Shift A</span>
+</div>
+</div>
+</div>
+</nav>
+<!-- Main Content Area -->
+<div class="flex-1 flex flex-col h-screen overflow-hidden">
+<!-- TopNavBar -->
+<header class="h-row-height-md w-full sticky top-0 z-10 flex justify-between items-center px-container-padding gap-gutter-default border-b border-outline-variant bg-surface-container flex-shrink-0">
+<!-- Search -->
+<div class="relative w-64">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full h-8 pl-9 pr-3 bg-surface-dim border border-outline-variant rounded-DEFAULT text-on-surface font-body-sm text-body-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary placeholder-on-surface-variant transition-colors" placeholder="Search system..." type="text"/>
+</div>
+<!-- Context Title (Optional, mapping to product_name if needed, but per instructions brand is on side, so we leave it empty or show path) -->
+<div class="flex-1 flex justify-center">
+<span class="font-label-md text-label-md text-on-surface-variant hidden md:block">Item Operations / Editor</span>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-2">
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-DEFAULT transition-colors">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+</button>
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-DEFAULT transition-colors">
+<span class="material-symbols-outlined text-[20px]">help</span>
+</button>
+<div class="w-[1px] h-4 bg-outline-variant mx-1"></div>
+<button class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-DEFAULT transition-colors">
+<span class="material-symbols-outlined text-[20px]">logout</span>
+</button>
+</div>
+</header>
+<!-- Canvas -->
+<main class="flex-1 overflow-y-auto p-container-padding">
+<div class="max-w-4xl mx-auto flex flex-col gap-gutter-default">
+<!-- Page Header -->
+<div class="flex justify-between items-end border-b border-outline-variant pb-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<a class="text-on-surface-variant hover:text-primary transition-colors flex items-center" href="#">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+<span class="font-label-md text-label-md ml-1">Back to List</span>
+</a>
+</div>
+<h2 class="font-display-sm text-display-sm text-on-surface flex items-center gap-3">
+                            Editing: Forklift-04
+                            <span class="inline-flex items-center px-2 py-0.5 rounded-DEFAULT border border-secondary text-secondary bg-secondary/10 font-label-sm text-label-sm uppercase tracking-wider">
+                                Draft
+                            </span>
+</h2>
+</div>
+</div>
+<!-- Form Container -->
+<form class="bg-surface-container border border-outline-variant rounded-DEFAULT flex flex-col">
+<!-- Form Body -->
+<div class="p-container-padding flex flex-col gap-6">
+<!-- Row 1: ID & Name -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter-default">
+<!-- Item ID (Read-only) -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant" for="itemId">Item ID</label>
+<input class="h-10 bg-surface-container-lowest border border-outline-variant text-on-surface-variant font-label-md text-label-md rounded-DEFAULT cursor-not-allowed opacity-70 px-3" disabled="" id="itemId" readonly="" type="text" value="EQ-FL-04-A"/>
+</div>
+<!-- Display Name (Required & Error State) -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface" for="displayName">
+                                    Display Name <span class="text-error">*</span>
+</label>
+<div class="relative">
+<input class="w-full h-10 bg-surface-dim border border-error text-on-surface font-body-md text-body-md rounded-DEFAULT px-3 focus:outline-none focus:border-error focus:ring-2 focus:ring-error focus:ring-opacity-50 transition-colors pr-10" id="displayName" placeholder="e.g. Primary Loading Forklift" type="text" value=""/>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-error text-[18px] pointer-events-none">error</span>
+</div>
+<p class="font-label-sm text-label-sm text-error flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+                                    Name is required
+                                </p>
+</div>
+</div>
+<!-- Row 2: Type & Technician -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter-default">
+<!-- Maintenance Type (Dropdown) -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface" for="maintType">
+                                    Maintenance Type <span class="text-primary">*</span>
+</label>
+<div class="relative">
+<select class="w-full h-10 bg-surface-dim border border-outline-variant text-on-surface font-body-md text-body-md rounded-DEFAULT px-3 appearance-none focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary focus:ring-opacity-50 transition-colors cursor-pointer" id="maintType">
+<option disabled="" selected="" value="">Select type...</option>
+<option value="routine">Routine Inspection</option>
+<option value="repair">Corrective Repair</option>
+<option value="overhaul">Major Overhaul</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Assigned Technician -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface" for="techSelect">Assigned Technician</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px] pointer-events-none">person_search</span>
+<input class="w-full h-10 bg-surface-dim border border-outline-variant text-on-surface font-body-md text-body-md rounded-DEFAULT pl-10 pr-3 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary focus:ring-opacity-50 transition-colors" id="techSelect" placeholder="Search technician..." type="text"/>
+</div>
+</div>
+</div>
+<!-- Row 3: Priority (Radio Group) -->
+<div class="flex flex-col gap-2 border border-outline-variant rounded-DEFAULT p-4 bg-surface-dim">
+<label class="font-label-md text-label-md text-on-surface mb-1">
+                                Priority Level <span class="text-primary">*</span>
+</label>
+<div class="flex flex-col sm:flex-row gap-4">
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="w-4 h-4 text-primary bg-surface-container border-outline-variant focus:ring-primary focus:ring-offset-surface-dim" name="priority" type="radio" value="low"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-surface transition-colors">Low (Routine)</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer group">
+<input checked="" class="w-4 h-4 text-primary bg-surface-container border-outline-variant focus:ring-primary focus:ring-offset-surface-dim" name="priority" type="radio" value="medium"/>
+<span class="font-body-sm text-body-sm text-on-surface group-hover:text-primary transition-colors">Medium (Standard)</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="w-4 h-4 text-error bg-surface-container border-error focus:ring-error focus:ring-offset-surface-dim" name="priority" type="radio" value="high"/>
+<span class="font-body-sm text-body-sm text-error font-medium">High (Urgent)</span>
+</label>
+</div>
+</div>
+<!-- Row 4: Description -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface" for="description">Work Order Description</label>
+<textarea class="w-full bg-surface-dim border border-outline-variant text-on-surface font-body-md text-body-md rounded-DEFAULT p-3 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary focus:ring-opacity-50 transition-colors resize-y" id="description" placeholder="Detail the maintenance requirements..." rows="4"></textarea>
+<div class="flex justify-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant">0 / 500 chars</span>
+</div>
+</div>
+</div>
+<!-- Form Footer / Controls -->
+<div class="p-4 border-t border-outline-variant bg-surface-container-low flex justify-end gap-3 rounded-b-DEFAULT">
+<button class="h-row-height-sm px-4 font-label-md text-label-md text-on-surface border border-outline-variant rounded-DEFAULT hover:bg-surface-variant transition-colors flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+                            Cancel
+                        </button>
+<button class="h-row-height-sm px-6 font-label-md text-label-md text-on-primary bg-primary rounded-DEFAULT hover:bg-primary-fixed transition-colors flex items-center justify-center gap-2 shadow-sm" type="submit">
+<span class="material-symbols-outlined text-[16px]">save</span>
+                            Save Changes
+                        </button>
+</div>
+</form>
+</div>
+</main>
+</div>
+</body></html>
